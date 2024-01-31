@@ -89,7 +89,7 @@ const SignIn = () => {
             <button
               onClick={onGoogleAuth}
               disabled={!agreed} // Disable the button if terms are not agreed
-              className="flex items-center justify-center bg-gray-200 hover:bg-green-600 text-black px-3 py-2 rounded transition duration-300 font-para text-white text-2xl"
+              className="flex items-center justify-center bg-gray-200 hover:bg-green-600 text-black px-3 py-2 rounded transition duration-300 font-para text-2xl"
             >
               Sign In <span className="inline"><FaGoogle className="ml-1" /></span>
             </button>
