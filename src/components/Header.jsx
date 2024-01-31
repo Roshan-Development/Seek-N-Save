@@ -46,19 +46,19 @@ const Header = () => {
             onClick={() => navigate('/lost')}
             className="hover:bg-gray-200 hover:text-black px-3 py-2 rounded transition duration-300 font-para text-2xl"
           >
-            Lost
+            {loggedIn ?"lost": ""}<span className="inline"></span>
           </button>
           <button
             onClick={() => navigate('/found')}
             className="hover:bg-gray-200 hover:text-black px-3 py-2 rounded transition duration-300 font-para text-2xl"
           >
-            Found
+            {loggedIn ?"found": ""}<span className="inline"></span>
           </button>
           <button
             onClick={()=> navigate('/sign-in')}
-            className="flex items-center hover:bg-gray-200 hover:text-black px-3 py-2 rounded transition duration-300 font-para text-2xl"
+            className="flex items-center  bg-green-600 hover:bg-white hover:text-black px-3 py-2 rounded transition duration-300 font-para text-2xl"
           >
-            {loggedIn ?"Profile": "Sign In"}<span className="inline"></span>
+            {loggedIn ?"Profile": "Get Started"}<span className="inline"></span>
           </button>
         </div>
       </div>

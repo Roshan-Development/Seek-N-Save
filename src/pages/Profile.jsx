@@ -100,7 +100,7 @@ const Profile = () => {
 
   return (
     <div className='text-white font-heading text-[50px] pt-10 pb-10 flex flex-col items-center justify-center'>
-  <div className='flex space-x-10'>
+  <div className='flex xl:flex-row flex-col space-x-10'>
   <button
     onClick={onLogout}
     className="mt-4 bg-red-500 text-white px-3 py-2 rounded transition duration-300 hover:bg-white"
@@ -110,7 +110,7 @@ const Profile = () => {
 
   <button
     onClick={()=>{ navigate("/create-listing")}}
-    className="mt-4 bg-green-600 text-white px-3 py-2 rounded transition duration-300 hover:bg-white"
+    className="mt-4 bg-green-600 text-white px-3 py-2 ml-auto mr-auto mb-4 rounded w-[100%] transition duration-300 hover:bg-white"
   >
     Create Listing
   </button></div>
