@@ -8,7 +8,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="flex items-end  justify-center py-4 bg-black text-white">
+    <div className="flex items-end  justify-center py-4 bg-transparent text-white">
       <button
         className="flex items-center justify-center py-4 bg-black text-white"
         onClick={handleLinkedInClick}
