@@ -18,6 +18,7 @@ const ListingItem = ({ item, profile, onDelete }) => {
   
 
   return (
+    <>
     
     <div className={`my-5 xl:p-6 xl:pl-5 ml-2 mr-2 pr-5 pl-5 pt-5 pb-5 border sm:w-[100%] w-[90%] rounded ${getBorderColor()}`}>
         <Link className='contents' to={`/separate-page/${item.id}`}>
@@ -29,13 +30,17 @@ const ListingItem = ({ item, profile, onDelete }) => {
             className="w-full h-full object-cover max-w-full"
           />
         </div>
+        
       )}
+      </Link>
+      <Link className='contents' to={`/separate-page/${item.id}`}>
       <div className="mt-2 font-heading">
         <h3 className="text-3xl font-bold">  {itemName}</h3>
         <p className="flex items-center text-[15px] mt-1 text-gray-100 text-bold font-para uppercase">
   <IoLocation className="mr-1" /> {near}
 </p>
-
+       </div>
+       </Link>
         {profile && (
          
             <button onClick={()=>onDelete(item.id)} className="text-red-500">
@@ -43,9 +48,10 @@ const ListingItem = ({ item, profile, onDelete }) => {
             </button>
           
         )}
-      </div>
-      </Link>
+      
+      
     </div>
+    </>
   );
 };
 

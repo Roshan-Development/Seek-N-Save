@@ -3,8 +3,10 @@ import { collection, addDoc } from 'firebase/firestore';
 import { storage, db, auth } from '../firebase.config';
 import { ref, uploadBytes, getDownloadURL, uploadBytesResumable } from 'firebase/storage';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const CreateListing = () => {
+  const navigate = useNavigate()
   const [Name, setName] = useState('');
   const [itemName, setItemName] = useState('');
   const [description, setDescription] = useState('');
@@ -27,6 +29,8 @@ const CreateListing = () => {
       setLoading(false)
       console.log(auth.currentUser.uid)
       toast.success("Created successfully.")
+      navigate("/")
+
     } catch (error) {
       console.error('Error adding document: ', error);
       setLoading(false)

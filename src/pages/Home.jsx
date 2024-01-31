@@ -61,12 +61,12 @@ const Home = () => {
       <div className="flex flex-col space-y-5 sm:flex-row sm:space-y-0 sm:space-x-5">
         <button className="bg-black border-white border text-white py-2 px-4 rounded-md transition duration-300 hover:bg-white hover:text-black" onClick={()=>{navigate("/lost")}}>
           <div className="flex items-center font-para text-2xl">
-            Lost Something <FaRegSadCry className="ml-1 text-red-900" />
+            Lost/Missing <FaRegSadCry className="ml-1 text-red-900" />
           </div>
         </button>
         <button className="bg-black border-white border text-white py-2 px-4 rounded-md transition duration-300 hover:bg-white hover:text-black" onClick={()=>{navigate("/found")}}>
           <div className="flex items-center font-para text-2xl">
-            Return Something <ImHappy className="ml-1 text-green-800" />
+            Found/Discovered <ImHappy className="ml-1 text-green-800" />
           </div>
         </button>
       </div>

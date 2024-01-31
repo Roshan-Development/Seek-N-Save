@@ -68,16 +68,22 @@ const Lost = () => {
     {!loading && listings && listings.length > 0 ? (
       <>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+        <div className="grid p-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
           {listings.map((item) => (
             <ListingItem key={item.id} item={item} profile={false}/>
           ))}
         </div>
       </>
     ) : (
-      <p>No listings available.</p>
+      <p className='text-center text-[10px]'>No listings available.</p>
     )}
   </div>
+  {loading && (
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center ">
+          {/* You can replace the image URL with your spinner or loading animation */}
+          <img src="https://cdn.dribbble.com/users/29051/screenshots/2347771/spinner.mov.gif" alt="Loading spinner" />
+        </div>
+      )}
 </div>
 
   );

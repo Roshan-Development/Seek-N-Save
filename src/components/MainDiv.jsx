@@ -42,7 +42,7 @@ const MainDiv = ({ item, profile, onDelete }) => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full md:w-[600px] lg:w-[800px] xl:w-[1200px]  mb-10 justify-center">
+    <div className="flex flex-col items-center w-full md:w-[500px]  lg:w-[800px] xl:w-[1200px]  mb-10 justify-center">
       <h1 className='text-center mt-0 pr-4 sm:pr-0 text-4xl lg:text-3xl xl:text-4xl'>Item: {itemName}</h1>
       <div className="flex flex-col sm:flex-row w-full pl-5 pr-5 justify-center items-center">
         <div className="w-full sm:w-[40%] p-4 mb-4 sm:mb-0">
@@ -79,9 +79,10 @@ const MainDiv = ({ item, profile, onDelete }) => {
     <span className='block'>
       Description: 
     </span>
-    <div className='text-[22px] max-w-[100px] max-h-[100px]'>
-      {description}
-    </div>
+    <div className='flex text-[22px] w-[100%] max-w-[600px]'>
+  {description}
+</div>
+
   </div>
 </div>
 
@@ -89,14 +90,14 @@ const MainDiv = ({ item, profile, onDelete }) => {
 
       </div>
       
-      <div className="flex space-x-10">
+      <div className="flex sm:flex-row flex-col space-x-10">
   <button className='text-white' onClick={handleVerification}>
     {isVerified ? <div className="flex items-center text-[30px] mt-1 text-gray-100 text-bold font-para uppercase">
   <IoCallOutline className="mr-1" /> {mobile}
 </div>: "Show Mobile"}
   </button>
   
-  <ReCAPTCHA
+  <ReCAPTCHA className=' pr-5'
     sitekey="6LfQSpsoAAAAAPaw5ZvGErrVI8DPFkV_XuQN-Pmv"
     onChange={(value) => setIsVerified(!!value)}
   />

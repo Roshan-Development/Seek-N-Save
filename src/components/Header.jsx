@@ -35,7 +35,7 @@ const Header = () => {
             <img
               src="https://images4.imagebam.com/e6/9a/2d/MEOIQ13_o.png"
               alt="Logo"
-              className="h-12 w-auto mr-2"
+              className="h-12 w-auto mr-2 opacity-80"
             />
           </button>
         </div>
