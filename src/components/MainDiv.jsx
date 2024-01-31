@@ -92,8 +92,8 @@ const MainDiv = ({ item, profile, onDelete }) => {
       
       <div className="flex sm:flex-row flex-col space-x-10">
   <button className='text-white' onClick={handleVerification}>
-    {isVerified ? <div className="flex items-center text-[30px] mt-1 text-gray-100 text-bold font-para uppercase">
-  <IoCallOutline className="mr-1" /> {mobile}
+    {isVerified ? <div className="flex pl-5 items-center text-[30px] mt-1 text-gray-100 text-bold font-para uppercase">
+  <IoCallOutline className=" mr-1" /> {mobile}
 </div>: "Show Mobile"}
   </button>
   
