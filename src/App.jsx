@@ -14,12 +14,13 @@ import Profile from './pages/Profile';
 import CreateListing from './pages/CreateListing';
 import SeparatePage from './pages/SeparatePage';
 import { AnimatePresence } from 'framer-motion';
+import ParticleBackground from './components/Particle';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <> <ParticleBackground/>
       <Router>
         <Header/>
         <AnimatePresence mode='wait'>

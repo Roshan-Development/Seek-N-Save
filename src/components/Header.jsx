@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black text-white p-4 sticky">
+    <header className="bg-transparent text-white p-4 sticky">
       <div className="container mx-auto flex items-center justify-between">
         {/* Left side with logo */}
         <div className="flex items-center">

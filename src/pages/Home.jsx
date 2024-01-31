@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     
-    <div className="bg-black min-h-screen flex flex-col pt-[120px] items-center">
+    <div className="bg-transparent min-h-screen flex flex-col pt-[120px] items-center">
       <div className="text-center max-w-md m">
         <h1 className="font-bold text-green-500 uppercase font-heading text-[48px]">
           Reuniting Possessions, <br />
