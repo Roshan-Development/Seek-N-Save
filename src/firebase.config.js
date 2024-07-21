@@ -8,12 +8,7 @@ import {getStorage} from "firebase/storage"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBEM7vg5u1unQZPhfVe4rDQTypI8FqC2jo",
-  authDomain: "seeknsave-91610.firebaseapp.com",
-  projectId: "seeknsave-91610",
-  storageBucket: "seeknsave-91610.appspot.com",
-  messagingSenderId: "731555107516",
-  appId: "1:731555107516:web:bbdd8bf289b7ce6ea4f6b9"
+ // Use your Credentials.
 };
 
 // Initialize Firebase
